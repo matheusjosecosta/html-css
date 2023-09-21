@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <h1>Formulario de telefone e email</h1>
+    <form action="cadastro" method="get" autocomplete="on">
+        <fieldset>
+            <legend>DADOS PESSOAIS</legend>
+            <p>
+                <label for="inome">NOME</label>
+                <input type="text" name="nome" id="inome">
+            </p>
+            <p>
+                <label for="imail">EMAIL</label>
+                <input type="email" name="mail" id="imail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="tele">TELEFONE</label>
+                <input type="tel" name="t" id="tele" autocomplete="tel-local" pattern="^\d{4}-\d{4}$" required>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="LIMPAR">
+        </p>
+
+    </form>
+    
+</body>
+</html>
