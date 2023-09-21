@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <h1>Teste De Formularios</h1>
+    <form action="javascript" method="get" autocomplete="on">
+
+        <p>
+            <label for="iest">ESTADO</label>
+            <select name="est" id="iest">
+                <optgroup label="grupo 1">
+                    <option value="sp">sao paulo</option>
+                    <option value="rj">rio de janeiro</option>
+                    <option value="mt">mato grosso</option>
+                    <option value="rs">rio grande do sul</option>
+                </optgroup>
+
+                <optgroup label="grupo 2">
+                    <option value="sc">santa catarina</option>
+                    <option value="pr">parana</option>
+                    <option value="go">goias</option>
+                </optgroup>
+
+            </select>
+        </p>
+        <p>
+            <label for="iprof">PROFISSAO</label>
+            <input type="text" name="prof" id="iprof" list="iprofe">
+            <datalist id="iprofe">
+                <option value="agr">agricultor</option>
+                <option value="mot">motorista</option>
+                <option value="cam">caminhoneiro</option>
+            </datalist>
+        </p>
+        <p>
+            <label for="text">MENSAGEN</label><br>
+            <textarea name="tex" id="text" cols="30" rows="10" placeholder="escreva aqui"></textarea>
+        </p>
+
+        <input type="submit" value="ENVIAR">
+        <input type="reset" value="LINPAR">
+
+    </form>
+    
+    
+</body>
+</html>
