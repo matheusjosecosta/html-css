@@ -1,0 +1,39 @@
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <h1>Testando formularios</h1>
+    <form action="java" method="get" autocomplete="on">
+
+        <p>
+            <label for="naci">ANO DE NACIMENTO</label>
+            <input type="number" name="data" id="naci"
+            oninput="calidade()">
+        </p>
+        <p>
+            <label for="idade">sua idade e </label>
+            <output id="idade">0</output>
+            
+        </p>
+
+      
+        <p>
+            <input type="submit" value="ENVIAR">
+            <input type="reset" value="APAGAR">
+        </p>
+
+    </form>
+
+    <script>
+        function calidade() {
+            let atual = new Date().getFullYear()
+            idade.innerHTML = Number(atual) - Number(naci.value)
+
+        }
+    </script>
+</head>
+<body>
