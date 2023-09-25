@@ -7,8 +7,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/MidiaQuieres.css">
 </head>
-<body>
+<body onresize="tamanho()">
     <header>
         <h1>meu Site</h1>
         <span id="anburguer" class="material-icons" onclick="clickmenu()">menu</span>
@@ -49,6 +50,14 @@
 
 
 
+        }
+
+        function tamanho() {
+            if (window.innerWidth >= 768 ) {
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
         }
     </script>
     
